@@ -1,0 +1,1 @@
+dmd -g src/main.d -Idsfml/src -L-Ldsfml/lib -L-Ldsfml/SFML/lib -L-ldsfml-graphics -L-ldsfml-window -L-ldsfml-audio -L-ldsfml-system -L-ldsfmlc-graphics -L-ldsfmlc-window -L-ldsfmlc-audio -L-ldsfmlc-system -L-lsfml-graphics -L-lsfml-window -L-lsfml-audio -L-lsfml-system -L-lstdc++ -L-rpath='$ORIGIN' -ofbin/FarmingAdventure

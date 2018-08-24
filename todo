@@ -1,0 +1,47 @@
+
+
+Finish state machine
+ - initialization
+ - transitions
+
+Window Resolution Handling
+ - accept predefined resolutions
+
+Tile Map
+ - handle heights (player vs environment)
+ - file format (json, multidimentional array binary)
+
+Input Handling
+ - Movement
+
+World Map
+ -sections or continuos
+
+Time System
+ - Time of day
+ - Time of day coloring (shaders)
+ - NPC schedules
+
+
+
+
+
+Capturing Stack Traces
+ - email them to me
+
+Game state management
+ - save files
+
+
+Crop management
+
+Quests
+
+Enemies
+
+Crafting
+
+UI
+ - character creation
+ - dialog (cut scenes?)
+ - menus

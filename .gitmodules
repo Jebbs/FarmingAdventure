@@ -1,0 +1,4 @@
+[submodule "dsfml"]
+	path = dsfml
+	url = http://github.com/jebbs/dsfml
+	ignore = dirty

@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "process",
+            "command": "${workspaceFolder}/build.sh",
+            /*
+            "command": "dmd",
+            "args": [
+                "-g", "main.d", "-Idsfml/src", "-L-Ldsfml/lib", "-L-Ldsfml/SFML/lib",
+                "-L-ldsfml-graphics", "-L-ldsfml-window", "-L-ldsfml-audio",
+                "-L-ldsfml-system", "-L-ldsfmlc-graphics", "-L-ldsfmlc-window",
+                "-L-ldsfmlc-audio", "-L-ldsfmlc-system", "-L-lsfml-graphics",
+                "-L-lsfml-window", "-L-lsfml-audio", "-L-lsfml-system",
+                "-L-lstdc++", "-L-rpath='$ORIGIN'", "-ofbin/FarmingAdventure"
+            ],
+            */
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
