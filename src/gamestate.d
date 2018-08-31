@@ -1,5 +1,14 @@
 module gamestate;
 
+public import dsfml.graphics.rendertarget;
+public import std.datetime: Duration;
+
+enum State
+{
+    mainMenu = 0,
+    stateCount
+}
+
 /**
  * Game state defines a state the game is in.
  *
@@ -14,9 +23,8 @@ interface GameState
     void exit();
 
     /// Perform the main update for this state
-    void update();
+    void update(Duration delta);
 
     /// Draw task
-    void draw();
-
+    void draw(RenderTarget target);
 }

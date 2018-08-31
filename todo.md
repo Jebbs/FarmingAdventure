@@ -1,23 +1,23 @@
 To Do / Roadmap
 ===
 
-Finish State Machine
+~~Finish State Machine~~
 ---
- - initialization
- - transitions
+ - ~~initialization~~
+ - ~~transitions~~
 
 Window Resolution Handling
 ---
  - accept predefined resolutions
 
- Input Handling
----
- - Movement
-
 Tile Map
 ---
  - handle heights (player vs environment)
  - file format (json, multidimentional array binary)
+
+ Input Handling
+---
+ - Movement
 
 Collision Detection
 ---
