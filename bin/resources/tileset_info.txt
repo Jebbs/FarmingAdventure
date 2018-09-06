@@ -1,0 +1,7 @@
+The tileset used was downloaded from:
+https://opengameart.org/content/basic-map-32x32-by-silver-iv
+
+It was created by Ivan Voirol, and all rights to the tile set go to him.
+
+This tileset is licensed under CC BY 3.0, which can be found here:
+https://creativecommons.org/licenses/by/3.0/
