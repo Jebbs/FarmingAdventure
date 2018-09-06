@@ -1,7 +1,7 @@
 module gamestate;
 
 public import dsfml.graphics.rendertarget;
-public import std.datetime: Duration;
+public import dsfml.system.time;
 
 enum State
 {
@@ -23,7 +23,7 @@ interface GameState
     void exit();
 
     /// Perform the main update for this state
-    void update(Duration delta);
+    void update(Time delta);
 
     /// Draw task
     void draw(RenderTarget target);

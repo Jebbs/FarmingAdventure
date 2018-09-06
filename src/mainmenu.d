@@ -31,7 +31,7 @@ class MainMenu : GameState
     }
 
     /// Perform the main update for this state
-    void update(Duration delta)
+    void update(Time delta)
     {
 
     }
