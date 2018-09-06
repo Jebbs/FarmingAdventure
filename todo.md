@@ -5,6 +5,8 @@ To Do / Roadmap
 ---
  - ~~initialization~~
  - ~~transitions~~
+ - ~~Need a way to give set of events to update method~~
+ - ~~Need a way to exit the game from state machine~~
 
 Tile Map
 ---

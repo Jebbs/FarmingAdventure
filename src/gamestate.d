@@ -1,6 +1,7 @@
 module gamestate;
 
 public import dsfml.graphics.rendertarget;
+public import dsfml.window.event;
 public import dsfml.system.time;
 
 enum State
@@ -23,7 +24,7 @@ interface GameState
     void exit();
 
     /// Perform the main update for this state
-    void update(Time delta);
+    void update(Time delta, const(Event[]) events);
 
     /// Draw task
     void draw(RenderTarget target);

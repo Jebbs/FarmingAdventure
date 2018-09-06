@@ -3,6 +3,9 @@ module statemanager;
 import gamestate;
 import mainmenu;
 
+/// global state manager states can trigger transitions and exit the game
+StateManager stateManager;
+
 /**
  * Class that manages states. What do you want from me?
  */
@@ -10,8 +13,10 @@ class StateManager
 {
     /// List of states in the game
     private GameState[State.stateCount] m_gameStates;
+    /// the current state
     private State m_currentState;
-
+    /// describes if a particular state requested that the game exit
+    private bool m_exitRequested;
 
     /// constructor
     this()
@@ -21,6 +26,19 @@ class StateManager
 
         m_gameStates[m_currentState].enter();
 
+        m_exitRequested = false;
+    }
+
+    /// Returns if the game should exit or not
+    bool exitRequested() const
+    {
+        return m_exitRequested;
+    }
+
+    /// call this to request the game to exit
+    void requestExit()
+    {
+        m_exitRequested = true;
     }
 
 

@@ -1,8 +1,11 @@
 module mainmenu;
 
 import gamestate;
+import statemanager;
 
 import dsfml.graphics;
+
+import std.stdio;
 
 /// The main menu of this game
 class MainMenu : GameState
@@ -31,9 +34,15 @@ class MainMenu : GameState
     }
 
     /// Perform the main update for this state
-    void update(Time delta)
+    void update(Time delta, const(Event[]) events)
     {
+        writeln(delta.asSeconds(), ":", events.length);
 
+        foreach(event; events)
+        {
+            if(event.type == Event.EventType.KeyReleased)
+                stateManager.requestExit();
+        }
     }
 
     /// Draw task
