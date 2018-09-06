@@ -6,14 +6,19 @@ To Do / Roadmap
  - ~~initialization~~
  - ~~transitions~~
 
+Tile Map
+---
+ - Draws tiles based on some format
+ - file format (json, multidimentional array binary)
+ - handle heights (player vs environment)
+
+HUD
+---
+ - Implement a basic HUD for testing
+
 Window Resolution Handling
 ---
  - accept predefined resolutions
-
-Tile Map
----
- - handle heights (player vs environment)
- - file format (json, multidimentional array binary)
 
  Input Handling
 ---
