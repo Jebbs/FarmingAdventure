@@ -2,6 +2,7 @@ module statemanager;
 
 import gamestate;
 import mainmenu;
+import tiletest;
 
 /// global state manager states can trigger transitions and exit the game
 StateManager stateManager;
@@ -23,7 +24,9 @@ class StateManager
     {
         //construct and initialize all states
         m_gameStates[State.mainMenu] = new MainMenu();
+        m_gameStates[State.tileTest] = new TileTest();
 
+        m_currentState = State.tileTest;
         m_gameStates[m_currentState].enter();
 
         m_exitRequested = false;

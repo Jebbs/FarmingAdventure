@@ -6,7 +6,8 @@
         {
             "label": "build",
             "type": "process",
-            "command": "${workspaceFolder}/build.sh",
+            "command": "rdmd",
+            "args": ["${workspaceFolder}/build.d"],
             "group": {
                 "kind": "build",
                 "isDefault": true

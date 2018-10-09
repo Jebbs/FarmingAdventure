@@ -1,7 +1,11 @@
-The tileset used was downloaded from:
+The basis for the tileset was downloaded from:
 https://opengameart.org/content/basic-map-32x32-by-silver-iv
 
-It was created by Ivan Voirol, and all rights to the tile set go to him.
+The name of the original, unedited file is "32x32_map_tile v3.1 [MARGINLESS].png"
+and was created by Ivan Voirol, and all rights to the tile set go to him.
 
 This tileset is licensed under CC BY 3.0, which can be found here:
 https://creativecommons.org/licenses/by/3.0/
+
+The file "tileset.png" uses tiles taken from the original file for use in
+this project.

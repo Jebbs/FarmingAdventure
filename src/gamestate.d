@@ -7,6 +7,7 @@ public import dsfml.system.time;
 enum State
 {
     mainMenu = 0,
+    tileTest,
     stateCount
 }
 

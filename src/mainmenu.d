@@ -36,7 +36,6 @@ class MainMenu : GameState
     /// Perform the main update for this state
     void update(Time delta, const(Event[]) events)
     {
-        writeln(delta.asSeconds(), ":", events.length);
 
         foreach(event; events)
         {
