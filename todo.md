@@ -10,21 +10,24 @@ To Do / Roadmap
 
 Tile Map
 ---
- - Draws tiles based on some format
- - file format (json, multidimentional array binary)
+ - ~~Draws tiles based on some format~~
+ - ~~file format (json, multidimentional array binary)~~
  - handle heights (player vs environment)
+
+Input Handling
+---
+ - Movement
+
+Window Resolution Handling
+---
+ - center player in window
+ - accept predefined resolutions
+
+ 
 
 HUD
 ---
  - Implement a basic HUD for testing
-
-Window Resolution Handling
----
- - accept predefined resolutions
-
- Input Handling
----
- - Movement
 
 Collision Detection
 ---
@@ -58,6 +61,7 @@ NPC's
  - Add them
 
 UI
+---
  - character creation
  - dialog (cut scenes?)
  - menus

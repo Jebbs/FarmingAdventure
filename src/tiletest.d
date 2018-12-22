@@ -4,7 +4,7 @@ import gamestate;
 import statemanager;
 
 import dsfml.graphics;
-
+import input;
 
 import std.stdio;
 import std.conv;
@@ -18,6 +18,9 @@ class TileTest : GameState
     Texture m_tileSet;
     uint m_tileSize = 32;
     VertexArray m_tileMap;
+
+    Texture m_farmerTexture;
+    Sprite m_farmerSprite;
 
 
     this()
@@ -33,6 +36,14 @@ class TileTest : GameState
         m_tileMap = new VertexArray(PrimitiveType.Quads);
 
         loadMap();
+
+        m_farmerTexture = new Texture();
+        m_farmerTexture.loadFromFile("resources/farmer.png");
+
+        m_farmerSprite = new Sprite(m_farmerTexture);
+        Vector2f spriteSize = m_farmerTexture.getSize();
+        m_farmerSprite.origin = spriteSize/2;
+        m_farmerSprite.position = Vector2f(352,352);
 
     }
 
@@ -52,22 +63,37 @@ class TileTest : GameState
     void update(Time delta, const(Event[]) events)
     {
 
-        m_text.setString(text(1/delta.asSeconds()));
+        m_text.setString(text(delta.asMicroseconds()/1000f));
 
         foreach(event; events)
         {
             //if(even.type == Event.)
         }
+
+        Vector2f mov = Input.movement();
+
+
+        m_farmerSprite.position = m_farmerSprite.position + (mov * 100 * delta.asSeconds());
+
+
     }
 
     /// Draw task
     void draw(RenderTarget target)
     {
+        auto view = target.getDefaultView();
+        view.center = m_farmerSprite.position;
+        target.view = view;
+
         RenderStates states = RenderStates(m_tileSet);
+
         target.draw(m_tileMap, states);
+        target.draw(m_farmerSprite);
 
+
+        //HUD?
+        target.view = target.getDefaultView();
         target.draw(m_text);
-
     }
 
     final void loadMap()
